@@ -1,1 +1,48 @@
-my read
+main com
+Создайте виртуальное окружение и активируйте его
+```
+python -m venv venv
+source venv/bin/activate
+
+```
+
+Установите зависимости
+```
+pip install -r requirements.txt
+```
+
+Запустите миграции и загрузите данные в БД
+```
+python manage.py migrate
+python manage.py loaddata data.json
+```
+6. Создайте администратора магазина
+```
+python manage.py createsuperuser
+```
+7. Запустите сервер
+```
+python manage.py runserver
+```
+Откройте браузер и перейдите по адресу http://127.0.0.1:8000/admin/. Введите имя пользователя и пароль администратора, чтобы войти в панель управления магазином.
+====================================================================================================================
+Examples
+
+Generate output suitable for a requirements file.
+Unix/macOS
+
+python -m pip freeze
+docutils==0.11
+Jinja2==2.7.2
+MarkupSafe==0.19
+Pygments==1.6
+Sphinx==1.2.2
+
+Windows
+
+Generate a requirements file and then install from it in another environment.
+Unix/macOS
+
+env1/bin/python -m pip freeze > requirements.txt
+env2/bin/python -m pip install -r requirements.txt
+

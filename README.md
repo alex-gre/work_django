@@ -1,0 +1,1 @@
+files for education django

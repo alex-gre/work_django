@@ -1,0 +1,33 @@
+base commands: for local works
+==================================
+cmd>git-gui  для вызова gui 
+git --help
+git clone url   клонирова репозитарий
+===================
+git init
+git add .    add all
+git log
+git commit -m "message" -a
+
+=================================
+
+После установки Git первое, что вам нужно сделать, это указать свое имя и адрес электронной почты:
+
+$ git config --global user.name "Your Real Name"
+$ git config --global user.email "you@email.com"
+
+Обратите внимание, что это user.nameдолжно быть ваше настоящее имя, а не ваш ник на GitHub. GitHub должен знать адрес электронной почты, который вы используете в user.emailполе, так как он будет использоваться для связывания ваших коммитов с вашей учетной записью GitHub.
+===============================================================================================
+#system control version
+git init   инициализация гита локального
+git clone url   клонирова репозитарий
+git add <file>  добавить файл 
+git commit -a -m " "  коммит мессаже
+git status посмотреть статус
+git log посмотреть логи
+git branch -a посмотреть ветки
+git branch feature создать ветку feature
+git checkout feature  перейти в ветку
+git push origin feature 
+git checkout master перейти в мастер
+git merge feature слияние с master & feature

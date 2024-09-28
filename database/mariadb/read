@@ -1,0 +1,17 @@
+for alma RHEL:
+==============
+sudo dnf install mariadb-server
+================================
+
+
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+
+=================================
+sudo mariadb-secure-installation
+===================================
+mysql -uroot -p
+
+create database db1;
+\q
+mysql -u root -p db1 < dump.sql

@@ -34,7 +34,7 @@ live hack
 ==========
 l.txt
 www******** , text*******
-save
+save as csv cp l.txt links.csv
 $>sqlite3 mydb.sqlite3
 
 sqlite>create table links(name text, info text);

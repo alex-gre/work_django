@@ -2,8 +2,12 @@ main com
 Создайте виртуальное окружение и активируйте его
 ```
 python -m venv venv
+
+linux:
 source venv/bin/activate
 
+windows:
+\venv\scripts\activate
 ```
 
 Установите зависимости

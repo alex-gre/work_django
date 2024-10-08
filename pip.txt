@@ -23,13 +23,13 @@ C:\Python34\Tools\Scripts\pip3.exe install numpy
 Пробежимся по основным командам pip:
 
 pip help - помощь по доступным командам.
-
+python -m pip help
 pip install package_name - установка пакета(ов).
 
 pip uninstall package_name - удаление пакета(ов).
-
+python -m pip list
 pip list - список установленных пакетов.
-
+python -m pip show numpy
 pip show package_name - показывает информацию об установленном пакете.
 
 pip search - поиск пакетов по имени.

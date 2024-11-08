@@ -52,6 +52,6 @@ env2/bin/python -m pip install -r requirements.txt
 
 =================================================
 
-После добавления каталога нужно сделать
+После добавления каталога с приложением нужно сделать
 Python manage.py makemigrations
 Python manage.py migrate

@@ -53,5 +53,13 @@ env2/bin/python -m pip install -r requirements.txt
 =================================================
 
 После добавления каталога с приложением нужно сделать
-Python manage.py makemigrations
-Python manage.py migrate
+перестроить миграции:
+====================
+$python manage.py makemigrations
+
+посмотреть как буде выглядить запрос create
+==========================================
+$ python manage.py sqlmigrate catalog 0001
+
+выполнить миграцию т.е создать таблицы
+$python manage.py migrate

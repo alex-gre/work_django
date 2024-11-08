@@ -50,3 +50,8 @@ Unix/macOS
 env1/bin/python -m pip freeze > requirements.txt
 env2/bin/python -m pip install -r requirements.txt
 
+=================================================
+
+После добавления каталога нужно сделать
+Python manage.py makemigrations
+Python manage.py migrate
